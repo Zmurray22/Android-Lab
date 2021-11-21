@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/drawable/shape_rectangle.xml" value="0.16203703703703703" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_main_menu.xml" value="0.2957427536231884" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_my_drawing.xml" value="0.2957427536231884" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_weather.xml" value="0.2957427536231884" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/menu/menu_main.xml" value="0.38697916666666665" />
         <entry key="..\:/Repos/GitHub-Repos/Lab2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Repos/GitHub-Repos/Lab2/app/src/main/res/layout/activity_main_menu.xml" value="0.26875" />
         <entry key="..\:/Repos/GitHub-Repos/Lab2/app/src/main/res/menu/menu_main.xml" value="0.2828125" />

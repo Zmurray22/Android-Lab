@@ -2,7 +2,9 @@ package com.example.lab2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,13 +26,20 @@ public class WeatherActivity extends AppCompatActivity implements RadioGroup.OnC
         btnConvert.setOnClickListener(this);
     }
 
-    private void displayToast(double temperature){
-        if(temperature > 50)
-            Toast.makeText(this, getString(R.string.tempToastF), Toast.LENGTH_LONG).show();
-        else if(temperature > 20)
-            Toast.makeText(this, getString(R.string.tempToastC), Toast.LENGTH_LONG).show();
-        else
-            Toast.makeText(this, getString(R.string.tempToastK), Toast.LENGTH_LONG).show();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        switch(item.getItemId()) {
+            case R.id.mnuMain:
+                startActivity(new Intent(getApplicationContext(), MainMenuActivity.class));
+                return true;
+            case R.id.mnuExit:
+                finish();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
@@ -110,5 +119,14 @@ public class WeatherActivity extends AppCompatActivity implements RadioGroup.OnC
         }else{
             displayToast(answer);
         }
+    }
+
+    private void displayToast(double temperature){
+        if(temperature > 50)
+            Toast.makeText(this, getString(R.string.tempToastF), Toast.LENGTH_LONG).show();
+        else if(temperature > 20)
+            Toast.makeText(this, getString(R.string.tempToastC), Toast.LENGTH_LONG).show();
+        else
+            Toast.makeText(this, getString(R.string.tempToastK), Toast.LENGTH_LONG).show();
     }
 }

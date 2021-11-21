@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lab2" >
+    package="com.example.lab2">
 
     <application
         android:allowBackup="false"
@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lab2" >
-        <!--first launch activity (Main menu)-->
+        android:theme="@style/Theme.Lab2">
+        <activity
+            android:name=".MyDrawingActivity"
+            android:exported="false" />
+        <!-- first launch activity (Main menu) -->
         <activity
             android:name=".MainMenuActivity"
             android:exported="true">
@@ -18,12 +21,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!--Weather activity-->
+        </activity> <!-- Weather activity -->
         <activity
             android:name=".WeatherActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
