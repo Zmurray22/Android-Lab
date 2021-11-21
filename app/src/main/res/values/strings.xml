@@ -1,0 +1,34 @@
+<resources>
+    <!--weather activity-->
+    <string name="tempChoose">Choose Your Temperature</string>
+    <string name="checkedIDF">You chose Fahrenheit</string>
+    <string name="checkedIDC">You chose Celsius</string>
+    <string name="checkedIDK">You chose Kelvin</string>
+    <string name="tempToastF">It\'s very hot</string>
+    <string name="tempToastC">This is quite comfortable</string>
+    <string name="tempToastK">It\'s freezing</string>
+    <string name="weatherError1">Please enter a value</string>
+    <string name="weatherError2">Please select a unit</string>
+    <string name="degF">°Fahrenheit</string>
+    <string name="degC">°Celsius</string>
+    <string name="degK">Kelvin</string>
+    <string name="btnTempEnter">Calculate</string>
+    <string name="enterTemp">Enter the temperature and starting unit</string>
+    <string name="tempInputHint">Enter the temperature</string>
+    <string name="tempOutputF"> °F</string>
+    <string name="tempOutputC"> °C</string>
+    <string name="tempOutputK"> K</string>
+    <!--Main menu activity-->
+    <string name="Welcome">Welcome to Zach\'s App</string>
+    <string name="goWeather">Convert Temp</string>
+    <string name="goTicTacToe">Tic Tac Toe</string>
+    <string name="goInfo">Info</string>
+    <string name="goMusic">Favorite Song</string>
+    <string name="goTakePic">Take Picture</string>
+    <string name="goDraw">My Drawing</string>
+    <string name="mainMenu">Main Menu</string>
+    <!--Generic strings-->
+    <string name="app_name">Zach\'s Lab</string>
+    <string name="toastAction">Error</string>
+    <string name="exit">Exit</string>
+</resources>

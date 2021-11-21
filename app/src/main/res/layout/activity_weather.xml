@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context=".WeatherActivity">
+
+    <TextView
+        android:id="@+id/tempChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/tempChoose"
+        android:textAlignment="center"
+        android:textColor="#3A3A3A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/tempGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/plaintextEnterTemp"
+        app:layout_constraintTop_toBottomOf="@+id/plaintextEnterTemp">
+
+        <RadioButton
+            android:id="@+id/btnDegF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/artifika"
+            android:text="@string/degF"
+            android:textColor="#DD2C00"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btnDegC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/artifika"
+            android:text="@string/degC"
+            android:textColor="#2E7D32"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btnDegK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/artifika"
+            android:text="@string/degK"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/btnTempEnter"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempGroup" />
+
+    <TextView
+        android:id="@+id/lblOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/toastAction"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConvert" />
+
+    <TextView
+        android:id="@+id/textViewDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/enterTemp"
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempChoose" />
+
+    <EditText
+        android:id="@+id/plaintextEnterTemp"
+        android:layout_width="269dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="@string/tempInputHint"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDesc"
+        android:autofillHints="number" />
+
+    <TextView
+        android:id="@+id/textViewFahOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="42dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tempGroup"
+        app:layout_constraintTop_toBottomOf="@+id/plaintextEnterTemp" />
+
+    <TextView
+        android:id="@+id/textViewCelOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/textViewFahOut"
+        app:layout_constraintTop_toBottomOf="@id/textViewFahOut" />
+
+    <TextView
+        android:id="@+id/textViewKelOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/textViewCelOut"
+        app:layout_constraintTop_toBottomOf="@id/textViewCelOut" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
