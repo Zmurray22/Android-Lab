@@ -30,6 +30,7 @@
     <!--Generic strings-->
     <string name="app_name">Zach\'s Lab</string>
     <string name="toastAction">Error</string>
+    <string name="construction">Under Construction!</string>
     <string name="exit">Exit</string>
     <string name="test">Test</string>
 </resources>

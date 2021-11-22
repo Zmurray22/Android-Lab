@@ -1,11 +1,16 @@
 package com.example.lab2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainMenuActivity extends AppCompatActivity {
 
@@ -15,7 +20,7 @@ public class MainMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         //Add a listener to the button to take you to the temp converter
-        Button btnWeather=(Button) findViewById(R.id.btnWeather);
+        Button btnWeather= findViewById(R.id.btnWeather);
         btnWeather.setOnClickListener(new View.OnClickListener() {
                                           @Override
                                           public void onClick(View v) {
@@ -25,7 +30,7 @@ public class MainMenuActivity extends AppCompatActivity {
         );
 
         //Add a listener to the button to take you to the image activity
-        Button btnDraw=(Button) findViewById(R.id.btnDraw);
+        Button btnDraw= findViewById(R.id.btnDraw);
         btnDraw.setOnClickListener(new View.OnClickListener() {
                                           @Override
                                           public void onClick(View v) {
@@ -33,6 +38,31 @@ public class MainMenuActivity extends AppCompatActivity {
                                           }
                                       }
         );
+        //TODO: add listeners for other buttons
+    }
+    //Options menu creation and listeners
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        //TODO: refactor to if statements for Gradle 8.0
+        switch (item.getItemId()) {
+            case R.id.mnuMain:
+                return true;
+            case R.id.mnuSettings:
+                Toast.makeText(this, R.string.construction, Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.mnuExit:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void goWeather() {
@@ -44,4 +74,12 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MainMenuActivity.this, MyDrawingActivity.class);
         this.startActivity(intent);
     }
+
+    //TODO: intents for other buttons
+    /*goInfo
+    goTicTacToe
+    goFavSong
+    goTakePic
+    exit
+     */
 }

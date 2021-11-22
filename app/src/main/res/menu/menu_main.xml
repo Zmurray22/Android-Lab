@@ -5,8 +5,15 @@
         android:id="@+id/mnuMain"
         android:title="@string/mainMenu"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/mnuSettings"
+        android:title="Settings"
+        app:showAsAction="never" />
+
     <item
         android:id="@+id/mnuExit"
         android:title="@string/exit"
         app:showAsAction="never" />
+
 </menu>

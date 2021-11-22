@@ -1,9 +1,12 @@
 package com.example.lab2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -26,17 +29,27 @@ public class WeatherActivity extends AppCompatActivity implements RadioGroup.OnC
         btnConvert.setOnClickListener(this);
     }
 
+    //Options menu creation and listeners
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch(item.getItemId()) {
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.mnuMain:
-                startActivity(new Intent(getApplicationContext(), MainMenuActivity.class));
+                Intent intent = new Intent(WeatherActivity.this, MainMenuActivity.class);
+                this.startActivity(intent);
+                return true;
+            case R.id.mnuSettings:
+                Toast.makeText(this, R.string.construction, Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.mnuExit:
                 finish();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
