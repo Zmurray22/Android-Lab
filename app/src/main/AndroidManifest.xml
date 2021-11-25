@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lab2">
         <activity
-            android:name=".MyDrawingActivity"
+            android:name=".TicTacToeActivity"
             android:exported="false" />
-        <!-- first launch activity (Main menu) -->
+        <activity
+            android:name=".MyDrawingActivity"
+            android:exported="false" /> <!-- first launch activity (Main menu) -->
         <activity
             android:name=".MainMenuActivity"
             android:exported="true">
@@ -24,7 +26,7 @@
         </activity> <!-- Weather activity -->
         <activity
             android:name=".WeatherActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

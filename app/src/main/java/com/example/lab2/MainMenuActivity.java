@@ -38,6 +38,16 @@ public class MainMenuActivity extends AppCompatActivity {
                                           }
                                       }
         );
+
+        //Add a listener to the button to take you to the image activity
+        Button btnTic = findViewById(R.id.btnTicTacToe);
+        btnTic.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {
+                                           goTicTacToe();
+                                       }
+                                   }
+        );
         //TODO: add listeners for other buttons
     }
     //Options menu creation and listeners
@@ -76,9 +86,12 @@ public class MainMenuActivity extends AppCompatActivity {
     }
 
     //TODO: intents for other buttons
-    /*goInfo
-    goTicTacToe
-    goFavSong
+    /*goInfo*/
+    private void goTicTacToe(){
+        Intent intent = new Intent(MainMenuActivity.this, TicTacToeActivity.class);
+        this.startActivity(intent);
+    }
+    /*goFavSong
     goTakePic
     exit
      */
