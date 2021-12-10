@@ -48,6 +48,34 @@ public class MainMenuActivity extends AppCompatActivity {
                                        }
                                    }
         );
+
+        Button btnInfo=(Button) findViewById(R.id.btnInfo);
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {
+                                           goInfo();
+                                       }
+                                   }
+        );
+
+        Button btnPic=(Button) findViewById(R.id.btnTakePic);
+        btnPic.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {
+                                           goTakePic();
+                                       }
+                                   }
+        );
+
+        Button btnSong=(Button) findViewById(R.id.btnFavSong);
+        btnSong.setOnClickListener(new View.OnClickListener() {
+                                       @Override
+                                       public void onClick(View v) {
+                                           goSong();
+                                       }
+                                   }
+        );
+
         //TODO: add listeners for other buttons
     }
     //Options menu creation and listeners
@@ -91,8 +119,20 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MainMenuActivity.this, TicTacToeActivity.class);
         this.startActivity(intent);
     }
-    /*goFavSong
-    goTakePic
-    exit
-     */
+
+    private void goInfo() {
+        Intent intent = new Intent(MainMenuActivity.this, InfoPageActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void goTakePic(){
+        Intent intent = new Intent(MainMenuActivity.this, TakePictureActivity.class);
+        this.startActivity(intent);
+    }
+
+    private void goSong(){
+        Intent intent = new Intent(MainMenuActivity.this, SongActivity.class);
+        this.startActivity(intent);
+    }
+
 }

@@ -4,12 +4,12 @@
     android:shape="oval">
 
     <!-- semi-transparent solid green background color -->
-    <solid android:color="#FDD835" />
+    <solid android:color="#00ACC1" />
 
     <!-- dark green border -->
     <stroke
         android:width="5dp"
-        android:color="#FDD835" />
+        android:color="#00ACC1" />
 
     <!-- Margins -->
     <padding

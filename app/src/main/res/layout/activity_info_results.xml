@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoResultsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Season"
+        style="@style/inventory_page"
+        android:id="@+id/txtSeason"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inventory_page"
+        android:text="Temperature"
+        android:layout_below="@id/txtSeason"
+        android:id="@+id/txtTemp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inventory_page"
+        android:id="@+id/txtAllergies"
+        android:text="Allergies"
+        android:layout_below="@id/txtTemp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMain"
+        android:layout_below="@id/txtAllergies"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Back to Main"/>
+
+</RelativeLayout>

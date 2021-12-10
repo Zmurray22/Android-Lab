@@ -5,8 +5,12 @@
       <map>
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/drawable/shape_oval.xml" value="0.30364583333333334" />
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/drawable/shape_rectangle.xml" value="0.16203703703703703" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_info_page.xml" value="0.28541666666666665" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_info_results.xml" value="0.33" />
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_main_menu.xml" value="0.2957427536231884" />
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_my_drawing.xml" value="0.2957427536231884" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_song.xml" value="0.38697916666666665" />
+        <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_take_picture.xml" value="0.33" />
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.2875" />
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/layout/activity_weather.xml" value="0.2957427536231884" />
         <entry key="..\:/Repos/GitHub-Repos/Android-Lab/app/src/main/res/menu/menu_main.xml" value="0.38697916666666665" />

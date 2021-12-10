@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoPageActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/informationTitle"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/favoriteSeason"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/textView1" />
+
+    <Spinner
+        android:id="@+id/spnSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        style="@style/inventory_page"
+        android:entries="@array/seasons" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spnSeason"
+        style="@style/inventory_page"
+        android:text="@string/favoriteTemp" />
+
+
+    <SeekBar
+        android:id="@+id/skbTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        style="@style/inventory_page"
+        android:max="120"
+        android:progress="70" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSeekValue"
+        android:layout_below="@id/skbTemp"
+        style="@style/inventory_page"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inventory_page"
+        android:layout_below="@id/lblSeekValue"
+        android:text="@string/allergies" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Allergies:"
+        android:id="@+id/swchAllergy"
+        android:layout_below="@+id/textView4"
+        style="@style/inventory_page"
+        android:textOff="no"
+        android:textOn="yes"
+        tools:ignore="UseSwitchCompatOrMaterialXML"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/inventory_page"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/swchAllergy"
+        android:text="Save" />
+
+
+</RelativeLayout>

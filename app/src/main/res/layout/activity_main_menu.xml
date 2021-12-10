@@ -4,20 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.lab2.MainMenuActivity"
     >
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:background="@drawable/shape_oval"
-        android:visibility="visible" />
+        android:src="@drawable/ironman"
+        android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/lblWelcome"
+        style="@style/Default"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -26,8 +26,7 @@
         android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         android:text="@string/Welcome"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        style="@style/Default" />
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/btnInfo"
@@ -35,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center|fill"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="120dp"
         android:text="@string/goInfo"
         android:textSize="24sp" />
 
